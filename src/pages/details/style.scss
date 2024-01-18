@@ -1,0 +1,121 @@
+.detail-section {
+    color: #ffffff;
+}
+
+.details-banner {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.details-bannerImg {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    min-height: 450px;
+    opacity: 0.1;
+}
+
+
+.opacity-layer {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            rgba(4, 21, 45, 0) 0%,
+            #04152d 79.17%);
+}
+
+.details-bannerSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .lazy-load-image-background {
+        width: 350px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+        flex: 3;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.details-right {
+    flex: 7;
+    padding: 20px;
+
+    .details-title {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .details-tagline {
+        opacity: 0.5;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .details-rating {
+        display: flex;
+        margin-bottom: 20px;
+
+        .circleRating {
+            max-width: 90px;
+            background-color: var(--black2);
+
+            .CircularProgressbar-text {
+                fill: white;
+            }
+        }
+    }
+
+    .details-overview {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .details-overview-text {
+        word-spacing: 2px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .details-stats {
+        display: flex;
+        gap: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+
+        .label1 {
+            font-weight: bolder;
+
+            .details-stat {
+                margin-left: 10px;
+                font-weight: normal;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .label {
+        font-weight: bolder;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+
+        .details-stat {
+            margin-left: 10px;
+            font-weight: normal;
+            opacity: 0.5;
+        }
+    }
+
+}

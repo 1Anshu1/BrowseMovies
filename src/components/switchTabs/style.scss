@@ -1,0 +1,27 @@
+.caraouselTabs {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    padding: 2px 5px;
+
+}
+
+.caraouselTab {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    width: 100px;
+    cursor: pointer;
+}
+
+.activeTab {
+    background: var(--gradient);
+    color: white;
+}
